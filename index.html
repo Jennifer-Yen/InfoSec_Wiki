@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首頁 · 資訊安全管理課程筆記</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="masthead"><a href="index.html">資訊安全管理<span>課程筆記</span></a></header>
+<main id="main">
+<div class="intro">
+<h1>資訊安全管理</h1>
+<p>從資安基本概念到風險管理，按主題複習課堂重點。</p>
+</div>
+<div class="catalog">
+<label for="search">搜尋筆記</label>
+<input id="search" type="search" placeholder="例如：風險、CIA、數位簽章">
+<p id="results" aria-live="polite">3 篇筆記</p>
+<section class="group"><h2>資安基礎</h2><ul><li data-note data-search="資安基礎 機密性、完整性與可用性 資安三要素（CIA）從機密性、完整性、可用性三方面描述資訊和服務需要受到的保護。 - 機密性（Confidentiality）關注誰可以接觸資料。
+- 完整性（Integrity）關注資料是否正確，以及是否遭到未授權修改。
+- 可用性（Availability）關注授權使用者能否在需要時取得資料或使用服務。 教學示例：以課程選課系統來看，限制誰能讀取名單是機密性，避免選課紀錄被擅改是完整性，選課時段能順利登入則是可用性。 課程教材《ISM1 資訊安全範疇》，PDF 第 5 頁，SRC-0004。"><a href="notes/cia-triad.html">機密性、完整性與可用性</a><p>資安三要素（CIA）從機密性、完整性、可用性三方面描述資訊和服務需要受到的保護。</p></li><li data-note data-search="資安基礎 數位簽章 數位簽章（Digital Signature）使用簽署者的私鑰簽署，並以對應的公鑰驗證。 驗證者需要取得可信的簽署者公鑰，才能用驗證結果判斷簽章與訊息是否相符。若訊息還需要保密，須另外考慮加密。 教材以比特幣交易為例，說明如何透過簽章驗證交易授權。可用這個案例複習私鑰簽署與公鑰驗證各自的用途。 - 課程教材《ISM1 資訊安全範疇》，PDF 第 33–34 頁，SRC-0004。
+- 課程教材《ISM 5-1 Blockchain &amp; Bitcoin》，PDF 第 10–11、18–19 頁，SRC-0001。"><a href="notes/digital-signature.html">數位簽章</a><p>數位簽章（Digital Signature）使用簽署者的私鑰簽署，並以對應的公鑰驗證。</p></li></ul></section>
+<section class="group"><h2>風險管理</h2><ul><li data-note data-search="風險管理 資產與風險評估 風險評估從資產與業務出發，辨識威脅、脆弱性及既有控制，再評估後果和發生可能性。 - 資產盤點記錄需要保護的資訊或系統，以及負責管理的人。
+- 威脅是可能造成損害的情況。脆弱性是可能讓損害發生或擴大的弱點。
+- 評估後果與發生可能性後，再依組織採用的準則選擇風險處理方式。 教學示例：以課程作業平台為資產，列出帳號遭冒用的風險，檢視現有登入控制，再評估作業資料可能受到的影響。教材中的計分與接受門檻是示例，實際使用時須依組織情境設定。 課程教材《ISM3-3 資通安全維護計畫撰寫作業》，PDF 第 15–29 頁，SRC-0011。"><a href="notes/risk-assessment.html">資產與風險評估</a><p>風險評估從資產與業務出發，辨識威脅、脆弱性及既有控制，再評估後果和發生可能性。</p></li></ul></section>
+</div>
+</main>
+<footer>資訊安全管理課程筆記</footer>
+</body>
+</html>

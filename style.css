@@ -1,0 +1,39 @@
+:root {
+  color-scheme: light;
+  --paper: #faf6ec;
+  --ink: #172b46;
+  --muted: #4d5a69;
+  --line: #d9cdb8;
+  --accent: #855329;
+  font: 17px/1.75 "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); }
+a { color: inherit; text-underline-offset: .25em; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.masthead, footer { padding: .95rem max(1.25rem, calc((100% - 54rem) / 2)); }
+.masthead { border-bottom: 1px solid var(--line); }
+.masthead a { text-decoration: none; font-weight: 750; }
+.masthead span { margin-left: .75em; color: var(--muted); font-size: .8rem; }
+main { max-width: 54rem; min-height: 75vh; margin: auto; padding: 2.6rem 1.25rem 4rem; }
+.intro { border-bottom: 3px solid var(--ink); padding: 1rem 0 1.55rem; }
+h1 { margin: .3rem 0 .65rem; font-size: clamp(2rem, 6vw, 3.65rem); line-height: 1.2; letter-spacing: -.045em; }
+.intro p, .group p, #results, footer { color: var(--muted); }
+.catalog { padding-top: 1.8rem; }
+label { display: block; font-weight: 700; }
+input { width: min(100%, 27rem); padding: .6rem .8rem; margin-top: .4rem; border: 1px solid #8a8173; background: #fffdf8; border-radius: .3rem; color: var(--ink); font: inherit; }
+#results { margin: .45rem 0 1.3rem; }
+.group h2, article h2 { font-size: 1.35rem; border-bottom: 1px solid var(--line); padding-bottom: .45rem; }
+.group ul { list-style: none; padding: 0; }
+.group li { padding: .7rem 0 .95rem; }
+.group a { font-size: 1.17rem; font-weight: 750; }
+.group p { margin: .2rem 0 0; }
+article { max-width: 42rem; }
+article section { margin-top: 2rem; }
+.category { margin: 1.7rem 0 .35rem; color: var(--accent); font-weight: 750; }
+.back { font-size: .94rem; }
+footer { border-top: 1px solid var(--line); font-size: .85rem; }
+.skip { position: absolute; left: -10000px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--paper); padding: .5rem; }
+@media (max-width: 520px) { main { padding-top: 1.8rem; } .group li { padding-bottom: .7rem; } }
